@@ -97,12 +97,24 @@
   background: linear-gradient(140deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0),rgb(0, 0, 0) 100%);
 }
 .name{
+  transition: .2s ease;
   text-decoration: 0;
   color: black;
 }
+.name:hover{
+  transition: .2s ease;
+  color: black;
+  text-shadow: 0 0 20px #0077ff,0 0 10px #3c97ff, 0 0 5px #61b8ff;
+}
 .name2{
-  color:black;
+  transition: .2s ease;
   text-decoration: 0;
+  color: black;
+}
+.name2:hover{
+  transition: .2s ease;
+  color: black;
+  text-shadow: 0 0 20px #0077ff,0 0 10px #3c97ff, 0 0 5px #61b8ff;
 }
 .tabButton {
   transition: .5s ease;
@@ -134,6 +146,7 @@
 }
 .tabButton:hover a {
   color: white;
+  text-shadow: 0 0 20px #ffa600,0 0 10px #ff9900, 0 0 5px #fffb00;
 }
 
 @media only screen and (max-width: 1100px) {

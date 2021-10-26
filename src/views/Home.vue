@@ -78,19 +78,21 @@ h1{
 .zarowaOn img{
   width:10%;
   height:20%;
+  cursor:grabbing;
 }
 .zarowaOff img{
   width:10%;
   height:20%;
+  cursor:grabbing;
   animation: pulse 1.5s linear infinite;
 }
 .zarowki{
   display:inline-block;
-  -webkit-animation: fadeinA 5s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeinA 5s; /* Firefox < 16 */
-        -ms-animation: fadeinA 5s; /* Internet Explorer */
-         -o-animation: fadeinA 5s; /* Opera < 12.1 */
-            animation: fadeinA 5s;
+  -webkit-animation: fadeinA 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinA 3s; /* Firefox < 16 */
+        -ms-animation: fadeinA 3s; /* Internet Explorer */
+         -o-animation: fadeinA 3s; /* Opera < 12.1 */
+            animation: fadeinA 3s;
 }
 #click{
   overflow: hidden;
@@ -136,7 +138,7 @@ h1{
 }
 @keyframes fadeinA {
     0% { opacity: 0; }
-    65% { opacity: 0; }
+    45% { opacity: 0; }
     100%   { opacity: 1; }
 }
 @keyframes typing {
