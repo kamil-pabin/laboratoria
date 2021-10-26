@@ -51,7 +51,7 @@
         </b-nav>
       </template>
       <b-card-body class="text-center interior">
-        <transition name="slide">
+        <transition name="fade" mode="out-in">
           <router-view />
         </transition>
       </b-card-body>
