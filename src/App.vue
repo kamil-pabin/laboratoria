@@ -129,9 +129,6 @@
   max-height:90vh;
   background: linear-gradient(-180deg, rgba(246, 255, 177, 0.295) 0%, rgba(255, 224, 211, 0.137) 41%,rgba(254, 249, 255, 0.979) 100%);
 }
-.card-body.text-center.interior {
-    padding: 0;
-}
 .tabButton:hover {
   background: rgba(255, 255, 255, 0.107);
   transition: .6s ease;
@@ -156,5 +153,8 @@
     font-weight: 500;
     transform: skew(0deg);
   }
+}
+.card-body.text-center.interior {
+    padding: 0;
 }
 </style>
