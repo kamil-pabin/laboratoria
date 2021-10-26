@@ -82,7 +82,6 @@
     min-height: 100vh;
     min-width: 100vw;
     padding: 0vh;
-    display:block;
 }
 .myheader{
   display: flex;
@@ -126,7 +125,7 @@
 .interior{
   padding-bottom: 0;
   margin-bottom:0;
-  max-height:90vh;
+  max-height:90%;
   background: linear-gradient(-180deg, rgba(246, 255, 177, 0.295) 0%, rgba(255, 224, 211, 0.137) 41%,rgba(254, 249, 255, 0.979) 100%);
 }
 .tabButton:hover {
