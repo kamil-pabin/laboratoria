@@ -5,7 +5,7 @@
     </div>
     <div class="newY">
         <img src="../assets/newYork.png" alt="Responsive image">
-      </div>
+    </div>
   </div>
 </template>
 
