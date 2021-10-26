@@ -52,12 +52,11 @@ export default {
 
 <style scoped lang="scss">
 .stronaPodr{
-  max-width: 80em;
+  max-width: 75em;
   margin-left: auto;
   margin-right: auto;
 }
 .calosc{
-  float: left;
   padding: 1em;
   width: 100%;
 }
