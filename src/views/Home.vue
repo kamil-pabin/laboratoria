@@ -1,23 +1,25 @@
 <template>
   <div class="home" v-bind:style="[zarowkaWlacz == 0 ? {'background': 'black'} : {'background': 'white'}]">
-    <div class="typewriter" v-bind:style="[zarowkaWlacz == 0 ? {'color': 'white'} : {'color': 'black'}]">
-      <h1 id="hello">Witaj na mojej stronie.</h1>
-    </div>
-    <div class="zarowki">
-      <div class="zarowaOn" v-show="zarowkaWlacz == 1">
-        <img src="../assets/bulb.png" alt="Responsive image" v-on:click="zarowkaWlacz -= 1; changeBulb()">
+    <div id="tlo">
+      <div class="typewriter" v-bind:style="[zarowkaWlacz == 0 ? {'color': 'white'} : {'color': 'black'}]">
+        <h1 id="hello">Witaj na mojej stronie.</h1>
       </div>
-      <div class="zarowaOff" v-show="zarowkaWlacz == 0">
-        <img src="../assets/bulbOff.png" alt="Responsive image" v-on:click="zarowkaWlacz += 1; changeBulb()">
-      </div>
-      <div id="listaTech" class="check-list" v-show="zarowkaWlacz == 1">
-        <div id="nagl">Wykorzystane technologie:</div>
-        <ul>
-          <li>-Vue.js with router and vuex</li>
-          <li>-Bootstrap-vue</li>
-          <li>-HTML&CSS&JavaScript</li>
-          <li>-VueFormulate</li>
-        </ul>
+      <div class="zarowki">
+        <div class="zarowaOn" v-show="zarowkaWlacz == 1">
+          <img src="../assets/bulb.png" alt="Responsive image" v-on:click="zarowkaWlacz -= 1; changeBulb()">
+        </div>
+        <div class="zarowaOff" v-show="zarowkaWlacz == 0">
+          <img src="../assets/bulbOff.png" alt="Responsive image" v-on:click="zarowkaWlacz += 1; changeBulb()">
+        </div>
+        <div id="listaTech" class="check-list" v-show="zarowkaWlacz == 1">
+          <div id="nagl">Wykorzystane technologie:</div>
+          <ul>
+            <li>-Vue.js with router and vuex</li>
+            <li>-Bootstrap-vue</li>
+            <li>-HTML&CSS&JavaScript</li>
+            <li>-VueFormulate</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -59,30 +61,30 @@ export default {
 .home{
   font-family: Zen Kurenaido;
   text-align: center;
-  height:85vh;
   width:100%;
-  display:inline-block;
-  background: black;
+  height:100;
+  display:block;
   color: white;
   padding:0;
   margin:0;
+  max-height:100%;
 }
 h1{
     overflow: hidden;
     line-height: 20vh;
-    font-size:5vw;
+    font-size:6vw;
     margin: 0;
     padding:0;
     letter-spacing: .15em;
   }
 .zarowaOn img{
-  width:10%;
-  height:20%;
+  max-height:20vh;
+  max-width:20vh;
   cursor:grabbing;
 }
 .zarowaOff img{
-  width:10%;
-  height:20%;
+  max-height:20vh;
+  max-width:20vh;
   cursor:grabbing;
   animation: pulse 1.5s linear infinite;
 }
@@ -173,6 +175,17 @@ h1{
     padding:0;
     margin-top:3%;
     margin-bottom: 1%;
+  }
+  .zarowaOn img{
+    max-height:20vh;
+    max-width:20vh;
+    cursor:grabbing;
+  }
+  .zarowaOff img{
+    max-height:20vh;
+    max-width:20vh;
+    cursor:grabbing;
+    animation: pulse 1.5s linear infinite;
   }
 }
 </style>

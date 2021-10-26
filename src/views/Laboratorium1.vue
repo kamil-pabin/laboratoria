@@ -1,6 +1,6 @@
 <template>
   <div class="lab1">
-    <b-tabs content-class="mt-3" class="tabA">
+    <b-tabs content-class="mt-3" class="tabsy" justify fill>
       <b-tab class="tabA" title="List" active>
         <div>
           <h2>Utwórz List</h2>
@@ -253,8 +253,19 @@ export default {
   margin-left: auto;
   display:inline-block;
 }
+.lab1{
+  text-align: center;
+  width:100%;
+  position:flex;
+  color: black;
+  padding:0;
+  margin:0;
+  max-height:100%;
+}
 .lab1 a {
   color: black;
+  font-size:0.8rem;
+  text-align: center;
   font-family: Zen Kurenaido;
   font-weight: 500;
   text-transform: uppercase;
@@ -299,13 +310,13 @@ export default {
 .tabC {
   color: black;
   padding:1%;
-  display:flex;
+  display:block;
   margin: auto;
   width: 100%;
   text-align:left;
 }
 #formularz{
-  width:70%;
+  display:block;
   position: relative;
   margin-left: auto;
   margin-right: auto;

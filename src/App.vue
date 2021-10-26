@@ -137,7 +137,8 @@
 .interior{
   padding-bottom: 0;
   margin-bottom:0;
-  max-height:90%;
+  display:flex;
+  max-height:100%;
   background: linear-gradient(-180deg, rgba(246, 255, 177, 0.295) 0%, rgba(255, 224, 211, 0.137) 41%,rgba(254, 249, 255, 0.979) 100%);
 }
 .tabButton:hover {
@@ -168,5 +169,6 @@
 }
 .card-body.text-center.interior {
     padding: 0;
+    height:100%;
 }
 </style>

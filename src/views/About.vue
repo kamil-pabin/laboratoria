@@ -24,17 +24,25 @@ export default {
 .about{
   font-family: Zen Kurenaido;
   text-align: center;
-  height:85vh;
   width:100%;
   position:flex;
   color: black;
   padding:0;
   margin:0;
+  max-height:100%;
+}
+.newY{
+  display:block;
+  margin:auto;
+  max-height:100%;
+}
+.newY img{
+  max-width: 100%;
 }
 h1{
     overflow: hidden;
     line-height: 20vh;
-    font-size:5vw;
+    font-size:6.5vw;
     margin: 0;
     padding:0;
     letter-spacing: .15em;
