@@ -298,11 +298,10 @@ export default {
 .tabB{
   color: black;
   padding:1%;
-  background: cadetblue;
   display:flex;
   margin: auto;
   text-align: center;
-  width: 85%;
+  width: 90%;
 }
 .tabA h2{
   font-size: 2.9em;
@@ -323,16 +322,15 @@ export default {
   text-align: center;
 }
 #odp{
-  text-align:left;
   width: 100%;
 }
 #odpowiedzi{
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
   color:black;
-  width:50%;
+  display:block;
   padding:1%;
+  display:block;
+  margin:auto;
 }
 #odpowiedzi a{
   color:rgb(100, 0, 0);
