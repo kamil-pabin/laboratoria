@@ -3,7 +3,7 @@
     <b-tabs content-class="mt-3" class="tabA">
       <b-tab class="tabA" title="List" active>
         <div>
-          <h2>List</h2>
+          <h2>Utwórz List</h2>
           <ListP v-show="isListHiddenStep == 0"
           :imieNazwisko=values.imieNazw
           :ulicaNumer=values.uliNumer
@@ -256,7 +256,7 @@ export default {
 .lab1 a {
   color: black;
   font-family: Zen Kurenaido;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 }
 .lab1:hover a {
@@ -268,6 +268,8 @@ export default {
 .napiszList .formulate-input{
   width:50%;
   text-align: left;
+  font-family: sans-serif;
+  font-weight: 300;
 }
 .napiszList .formulate-input-wrapper{
   width: 100%;
@@ -290,6 +292,9 @@ export default {
   margin: auto;
   text-align: center;
   width: 85%;
+}
+.tabA h2{
+  font-size: 2.9em;
 }
 .tabC {
   color: black;

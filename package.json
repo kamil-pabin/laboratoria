@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+	  "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "@braid/vue-formulate": "^2.5.2",
@@ -53,5 +54,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "homepage": "https://kamil-pabin.github.io/laboratoria/"
 }

@@ -79,10 +79,11 @@
   padding: 30px;
 }
 .theCard {
-  min-height: 100vh;
-  min-width: 100vw;
-  padding:0.1vh;
-  }
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 0vh;
+    display:block;
+}
 .myheader{
   display: flex;
   justify-content: space-between;
@@ -110,7 +111,7 @@
   text-transform: uppercase;
   font-family: Zen Kurenaido;
   font-size: 0.9em;
-  font-weight: 700;
+  font-weight: 500;
 }
 .rotate{
   transform: skew(0deg);
@@ -123,8 +124,13 @@
   color: white;
 }
 .interior{
-  padding: 0;
+  padding-bottom: 0;
+  margin-bottom:0;
+  max-height:90vh;
   background: linear-gradient(-180deg, rgba(246, 255, 177, 0.295) 0%, rgba(255, 224, 211, 0.137) 41%,rgba(254, 249, 255, 0.979) 100%);
+}
+.card-body.text-center.interior {
+    padding: 0;
 }
 .tabButton:hover {
   background: rgba(255, 255, 255, 0.107);
@@ -139,7 +145,6 @@
     display: flex;
     justify-content: space-between;
     font-size: 3rem;
-    position:static;
     font-family: Zen Kurenaido;
   }
   .tabButton {
@@ -148,9 +153,8 @@
     text-transform: uppercase;
     font-family: Zen Kurenaido;
     font-size: 0.8rem;
-    font-weight: 700;
+    font-weight: 500;
     transform: skew(0deg);
   }
 }
-
 </style>

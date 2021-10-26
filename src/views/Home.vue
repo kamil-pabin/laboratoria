@@ -10,7 +10,7 @@
       <div class="zarowaOff" v-show="zarowkaWlacz == 0">
         <img src="../assets/bulbOff.png" alt="Responsive image" v-on:click="zarowkaWlacz += 1; changeBulb()">
       </div>
-      <div id="listaTech" class="check-list">
+      <div id="listaTech" class="check-list" v-show="zarowkaWlacz == 1">
         <div id="nagl">Wykorzystane technologie:</div>
         <ul>
           <li>-Vue.js with router and vuex</li>
@@ -98,7 +98,7 @@ h1{
 }
 #listaTech{
   color:black;
-  font-size:4vw;
+  font-size:3vw;
   text-decoration: 0;
   list-style: 0;
   text-align: center;
@@ -157,9 +157,9 @@ h1{
     animation:
       typing 3s steps(30, end);
   }
-    #listaTech{
+  #listaTech{
     color:black;
-    font-size:3.5rem;
+    font-size: 2.3rem;
     text-decoration: 0;
     list-style: 0;
     text-align: center;
@@ -167,7 +167,7 @@ h1{
     height:20vh;
   }
   #listaTech #nagl{
-    font-size: 4.5rem;
+    font-size: 4rem;
     padding:0;
     margin-top:3%;
     margin-bottom: 1%;
