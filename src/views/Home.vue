@@ -104,7 +104,6 @@ h1{
   text-align: center;
   display:inline-block;
   height:20vh;
-  background:red;
 }
 #listaTech #nagl{
   font-size: 5.5vw;
