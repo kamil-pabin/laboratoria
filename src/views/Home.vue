@@ -1,25 +1,19 @@
 <template>
-  <div class="home" v-bind:style="[zarowkaWlacz == 0 ? {'background': 'black'} : {'background': 'white'}]">
+  <div class="home">
     <div id="tlo">
-      <div class="typewriter" v-bind:style="[zarowkaWlacz == 0 ? {'color': 'white'} : {'color': 'black'}]">
-        <h1 id="hello">Witaj na mojej stronie.</h1>
+      <div>
+        <h1 id="hello">Wyszukaj restauracje w której jadłeś: </h1>
       </div>
-      <div class="zarowki">
-        <div class="zarowaOn" v-show="zarowkaWlacz == 1">
-          <img src="../assets/bulb.png" alt="Responsive image" v-on:click="zarowkaWlacz -= 1; changeBulb()">
-        </div>
-        <div class="zarowaOff" v-show="zarowkaWlacz == 0">
-          <img src="../assets/bulbOff.png" alt="Responsive image" v-on:click="zarowkaWlacz += 1; changeBulb()">
-        </div>
-        <div id="listaTech" class="check-list" v-show="zarowkaWlacz == 1">
-          <div id="nagl">Wykorzystane technologie:</div>
-          <ul>
-            <li>-Vue.js with router and vuex</li>
-            <li>-Bootstrap-vue</li>
-            <li>-HTML&CSS&JavaScript</li>
-            <li>-VueFormulate</li>
-          </ul>
-        </div>
+    </div>
+    <div class="grupaZdjec">
+      <div class="zdjecie" id="sushi">
+        <img src="../assets/sushi.png" alt="Responsive image">
+      </div>
+      <div class="zdjecie" id="pizza">
+        <img src="../assets/pizza.png" alt="Responsive image">
+      </div>
+      <div class="zdjecie" id="stek">
+        <img src="../assets/stek.png" alt="Responsive image">
       </div>
     </div>
   </div>
@@ -38,154 +32,71 @@ export default {
   export default {
     data() {
       return {
-        zarowkaWlacz: 0,
-        slide: 0,
-        sliding: null
       }
     },
     methods: {
-      changeBulb() {
-        this.$emit('zarowkaWlacz')
-      },
-      onSlideStart(slide) {
-        this.sliding = true
-      },
-      onSlideEnd(slide) {
-        this.sliding = false
-      }
     }
   }
 </script>
 
 <style lang="scss" scoped>
 .home{
-  font-family: Zen Kurenaido;
   text-align: center;
   width:100%;
   height:100;
-  display:block;
   color: white;
   padding:0;
   margin:0;
   max-height:100%;
 }
-h1{
-    overflow: hidden;
-    line-height: 20vh;
-    font-size:6vw;
-    margin: 0;
-    padding:0;
-    letter-spacing: .15em;
-  }
-.zarowaOn img{
-  max-height:20vh;
-  max-width:20vh;
-  cursor:grabbing;
+#tlo{
+  border-bottom-right-radius: 60% 25%;
+  border-bottom-left-radius: 70% 25%;
+  background: #0f4ec2;
+  margin-bottom: 0px;
+  padding: 20px;
+  width: 100%;
+  height: 40vh;
 }
-.zarowaOff img{
-  max-height:20vh;
-  max-width:20vh;
-  cursor:grabbing;
-  animation: pulse 1.5s linear infinite;
-}
-.zarowki{
-  display:inline-block;
-  -webkit-animation: fadeinA 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeinA 3s; /* Firefox < 16 */
-        -ms-animation: fadeinA 3s; /* Internet Explorer */
-         -o-animation: fadeinA 3s; /* Opera < 12.1 */
-            animation: fadeinA 3s;
-}
-#click{
-  overflow: hidden;
-  font-size:4vw;
-}
-#listaTech{
-  color:black;
-  font-size:3vw;
-  text-decoration: 0;
-  list-style: 0;
-  text-align: center;
-  display:inline-block;
-  height:20vh;
-}
-#listaTech #nagl{
-  font-size: 5.5vw;
-  padding:0;
-  margin-top:3%;
-  margin-bottom: 1%;
-}
-#listaTech ul{
-  display:block;
-  padding:0;
+.grupaZdjec{
+  width: auto;
   max-width: 100%;
-  max-height: 100%;
+  margin-top:-100px;
+  padding:0;
+  height:100%;
+  background:yellow;
+  display:flex;
+  overflow: hidden;
 }
-#listaTech li{
-  list-style-type: none;
+.grupaZdjec .zdjecie{
+  background:red;
+  display:flex;
+  margin:0;
+  padding:0;
 }
-@keyframes pulse {
-0% {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+.grupaZdjec .zdjecie img{
+  max-width:100%;
+  height:100%;
+  object-fit: cover;
+  background:red;
 }
-50% {
-   -webkit-transform: scale(1);
-   transform: scale(1);
-}
-100% {
-    -webkit-transform: scale(0.9);
-   transform: scale(0.9);
-}
+h1{
+  overflow: hidden;
+  font-size:4.5vw;
+  font-weight: 300;
+  margin: 0;
+  margin-top:7vh;
+  padding:0;
 }
 @keyframes fadeinA {
     0% { opacity: 0; }
     45% { opacity: 0; }
     100%   { opacity: 1; }
 }
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-@media only screen and (min-width: 1250px) {
-  .typewriter h1{
-    overflow: hidden;
-    font-size:5rem;
-    line-height:20vh;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-  }
-  #hello{
-    animation-delay: 0.2s;
-    animation:
-      typing 3s steps(30, end);
-  }
-  #listaTech{
-    color:black;
-    font-size: 2.3rem;
-    text-decoration: 0;
-    list-style: 0;
-    text-align: center;
-    display:inline-block;
-    height:20vh;
-  }
-  #listaTech #nagl{
-    font-size: 4rem;
-    padding:0;
-    margin-top:3%;
-    margin-bottom: 1%;
-  }
-  .zarowaOn img{
-    max-height:20vh;
-    max-width:20vh;
-    cursor:grabbing;
-  }
-  .zarowaOff img{
-    max-height:20vh;
-    max-width:20vh;
-    cursor:grabbing;
-    animation: pulse 1.5s linear infinite;
+@media screen and (min-width: 1200px) {
+  h1 {
+     font-size: 3rem;
+     margin-top:7vh;
   }
 }
 </style>

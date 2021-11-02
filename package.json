@@ -1,5 +1,5 @@
 {
-  "name": "laboratoria",
+  "name": "zjadlempl",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -55,5 +55,5 @@
     "last 2 versions",
     "not dead"
   ],
-  "homepage": "https://kamil-pabin.github.io/laboratoria/"
+  "homepage": "zjadlem.pl/"
 }

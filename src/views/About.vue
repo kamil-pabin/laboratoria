@@ -1,10 +1,10 @@
 <template>
   <div class="about">
     <div class="typewriter">
-      <h1 id="hello">"Strona o mnie"</h1>
+      <h1 id="hello">Zjadłem.pl</h1>
     </div>
-    <div class="newY">
-        <img src="../assets/newYork.png" alt="Responsive image">
+    <div id="logo" class='invert'>
+        <img src="../assets/logo.png" alt="Responsive image">
     </div>
   </div>
 </template>
@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .about{
-  font-family: Zen Kurenaido;
+  font-family: Lucida Sans Unicode;
   text-align: center;
   width:100%;
   position:flex;
@@ -30,14 +30,6 @@ export default {
   padding:0;
   margin:0;
   max-height:100%;
-}
-.newY{
-  display:block;
-  margin:auto;
-  max-height:100%;
-}
-.newY img{
-  max-width: 100%;
 }
 h1{
     overflow: hidden;
