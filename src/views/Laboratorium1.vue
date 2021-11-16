@@ -261,6 +261,10 @@ export default {
   padding:0;
   margin:0;
   max-height:100%;
+  overflow:scroll;
+}
+::-webkit-scrollbar {
+  width: 20px;
 }
 .lab1 a {
   color: black;

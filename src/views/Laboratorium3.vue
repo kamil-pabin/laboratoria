@@ -49,6 +49,7 @@ export default {
   padding:0;
   margin:0;
   max-height:100%;
+  overflow:scroll;
 }
 .opisZadania{
   font-family: open-sans;

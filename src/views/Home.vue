@@ -16,7 +16,7 @@
           <ul>
             <li>-Vue.js with router and vuex</li>
             <li>-Bootstrap-vue</li>
-            <li>-HTML&CSS&JavaScript</li>
+            <li>-HTML&SCSS&JavaScript</li>
             <li>-VueFormulate</li>
           </ul>
         </div>

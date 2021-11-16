@@ -74,14 +74,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  position:absolute;
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  border: 0px !important;
+  overflow: hidden;
 }
 #nav {
   padding: 30px;
 }
 .theCard {
-    min-height: 100vh;
-    min-width: 100vw;
-    padding: 0vh;
+  height: 100%;
+  width: 100%;
+  padding: 0vh;
+  border: 0px !important;
 }
 .myheader{
   display: flex;
