@@ -6,6 +6,13 @@
     <div class="newY">
         <img src="../assets/newYork.png" alt="Responsive image">
     </div>
+    <div class="h2 mb-0 ikonki">
+      <b-icon-github @click="openNewTab('https://github.com/kamil-pabin')" />
+      <b-icon-linkedin @click="openNewTab('https://www.linkedin.com/in/kpabin/')" />
+      <b-icon-code-slash @click="openNewTab('https://www.codewars.com/users/kamil-pabin')" />
+      <b-icon-facebook @click="openNewTab('https://www.facebook.com/kamil.pab')" />
+      <b-icon-instagram @click="openNewTab('https://www.instagram.com/kamil_pabin/')" />
+    </div>
   </div>
 </template>
 
@@ -15,6 +22,11 @@ export default {
     return {
       value: '',
       context: null
+    }
+  },
+  methods: {
+    openNewTab: function (url) {
+      window.open(url, '_blank').focus()
     }
   }
 }
@@ -38,6 +50,13 @@ export default {
 }
 .newY img{
   max-width: 100%;
+}
+.ikonki{
+  display: flex;
+  max-width: 20vw;
+  margin:auto;
+  margin-top:2vh;
+  justify-content: space-between;
 }
 h1{
     overflow: hidden;
