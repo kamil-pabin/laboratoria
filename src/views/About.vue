@@ -58,6 +58,9 @@ export default {
   margin-top:2vh;
   justify-content: space-between;
 }
+.ikonki svg:hover{
+  cursor: pointer;
+}
 h1{
     overflow: hidden;
     line-height: 20vh;
