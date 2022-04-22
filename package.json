@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-	  "deploy": "sh deploy.sh"
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "@braid/vue-formulate": "^2.5.2",
@@ -14,6 +14,7 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-plugin-load-script": "^1.3.5",
     "vue-router": "^3.2.0",
     "vue-typical": "^2.1.0",
     "vuex": "^3.4.0"
@@ -55,5 +56,5 @@
     "last 2 versions",
     "not dead"
   ],
-  "homepage": "https://kamil-pabin.github.io/laboratoria/"
+  "homepage": "https://kamil-pabin.github.io/vue-project-about//"
 }
