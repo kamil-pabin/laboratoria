@@ -1,24 +1,2 @@
-# laboratoria
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# That is one of my first Vue projects - the site contains many views. See here:
+https://kamil-pabin.github.io/vue-project-about/#/
